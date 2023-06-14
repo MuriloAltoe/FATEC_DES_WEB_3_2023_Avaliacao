@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar</title>
+</head>
+<body>
+  <!-- <header> -->
+    <div style="width: auto; height: 200px;background-color: rgba(21, 176, 21, 0.612);
+    text-align: center;">
+      <h1 style="padding-top: 60px;">Semana da carreira</h1>
+      <h3>Chamada online :)</h3>
+      <h5><a style="margin-right: 10px;" href="/"> Marcar chamada </a> <a style="margin-left: 10px;" href="/alunos"> Ver alunos registrados </a></h5>
+
+    </div>
+  <!-- </header> -->
+  <div style="width: 350px; height: 350px; margin: 0 auto; background-color:rgb(38, 23, 12); color: antiquewhite;">
+    <div style="text-align: center; line-height: 55px;">
+    <form method="POST">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <input type="submit" value="Enviar">
+    </form>
+
+    </div>
+  </div>
+  <footer>
+
+  </footer>
+</body>
+</html>

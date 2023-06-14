@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        table{
+            outline: 1 solid black;
+            box-shadow: 0px 0px 3px;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alunos</title>
+</head>
+<body>
+    <div style="width: auto; height: 200px;background-color: rgba(21, 176, 21, 0.612);
+    text-align: center;">
+      <h1 style="padding-top: 60px;">Semana da carreira</h1>
+      <h3>Chamada online :)</h3>
+
+      <h5><a style="margin-right: 10px;" href="/"> Marcar chamada </a> <a style="margin-left: 10px;" href="/alunos"> Ver alunos registrados </a></h5>
+    </div>
+    <div style="width: 200px; margin: 0 auto; margin-top: 30px;">
+        <table style="width: 100%; text-align: center;">
+            <tr style="background-color: green; color: white; ">
+                <th>Aluno</th>
+                <th>Professor</th>
+            </tr>
+            
+        {%for i in lista%}
+            <tr  style="background-color: lightgreen;">
+                <td>{{i.nome}}</td>
+                <td>{{i.professor}}</td>
+            </tr>
+            
+        {%endfor%}
+        </table>
+    </div>
+</body>
+</html>
