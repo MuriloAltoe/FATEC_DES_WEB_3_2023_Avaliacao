@@ -1,9 +1,6 @@
 from django.shortcuts import render
 from core.forms import formProf
 from core.models import Pessoa
-import sqlite3
-
-
 
 def view_aluno(request):
     lista = Pessoa.objects.all()

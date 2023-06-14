@@ -1,0 +1,5 @@
+./venv
+
+./semanadacarreira/core/__pycache__
+./semanadacarreira/core/migrations
+./semanadacarreira/semanadacarreira/__pycache__

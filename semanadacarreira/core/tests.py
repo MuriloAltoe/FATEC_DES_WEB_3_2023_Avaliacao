@@ -4,7 +4,7 @@ from core.forms import formProf
 
 class MyFormTestCase(TestCase):
     def test_valid_form_submission(self):
-        form_data = {"nome": "Test", "professor":"Test"}
+        form_data = {"nome": "Test", "professor":"professor1"}
         form = formProf(data=form_data)
         self.assertTrue(form.is_valid())
 
